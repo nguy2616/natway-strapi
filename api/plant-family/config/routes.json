@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/plant-families",
+      "handler": "plant-family.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plant-families/count",
+      "handler": "plant-family.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plant-families/:id",
+      "handler": "plant-family.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plant-families",
+      "handler": "plant-family.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/plant-families/:id",
+      "handler": "plant-family.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/plant-families/:id",
+      "handler": "plant-family.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

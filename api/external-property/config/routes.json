@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/external-properties",
+      "handler": "external-property.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/external-properties/count",
+      "handler": "external-property.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/external-properties/:id",
+      "handler": "external-property.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/external-properties",
+      "handler": "external-property.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/external-properties/:id",
+      "handler": "external-property.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/external-properties/:id",
+      "handler": "external-property.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

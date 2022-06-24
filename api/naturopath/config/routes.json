@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/naturopaths",
+      "handler": "naturopath.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/naturopaths/count",
+      "handler": "naturopath.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/naturopaths/:id",
+      "handler": "naturopath.findOne",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

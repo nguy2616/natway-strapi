@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "basket_items",
+  "info": {
+    "name": "basket_item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "for_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "product": {
+      "model": "product"
+    },
+    "order": {
+      "model": "order",
+      "via": "basket_items"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plant_reviews",
+  "info": {
+    "name": "plant_review"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rate": {
+      "type": "integer",
+      "max": 5,
+      "min": 1
+    },
+    "by_user": {
+      "via": "plant_reviews",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "posted_at": {
+      "type": "datetime"
+    },
+    "plant": {
+      "model": "plant",
+      "via": "plant_reviews"
+    },
+    "comment": {
+      "type": "richtext"
+    }
+  }
+}

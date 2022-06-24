@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "external_properties",
+  "info": {
+    "name": "external_property"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

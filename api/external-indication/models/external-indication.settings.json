@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "external_indications",
+  "info": {
+    "name": "external_indication"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

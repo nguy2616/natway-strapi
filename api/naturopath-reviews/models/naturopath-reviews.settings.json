@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "naturopath_reviews",
+  "info": {
+    "name": "Naturopath_reviews",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comment": {
+      "type": "richtext"
+    },
+    "rate": {
+      "type": "integer",
+      "max": 5,
+      "min": 1
+    },
+    "posted_at": {
+      "type": "datetime"
+    },
+    "by_user": {
+      "via": "naturopath_reviews",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "to_user": {
+      "via": "given_naturopath_reviews",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

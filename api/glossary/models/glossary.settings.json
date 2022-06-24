@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "glossaries",
+  "info": {
+    "name": "glossary"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "word": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

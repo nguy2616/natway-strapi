@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/plant-reviews",
+      "handler": "plant-review.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plant-reviews/count",
+      "handler": "plant-review.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plant-reviews/:id",
+      "handler": "plant-review.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plant-reviews",
+      "handler": "plant-review.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/plant-reviews/:id",
+      "handler": "plant-review.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/plant-reviews/:id",
+      "handler": "plant-review.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

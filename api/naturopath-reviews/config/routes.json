@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/naturopath-reviews",
+      "handler": "naturopath-reviews.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/naturopath-reviews/count",
+      "handler": "naturopath-reviews.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/naturopath-reviews/:id",
+      "handler": "naturopath-reviews.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/naturopath-reviews",
+      "handler": "naturopath-reviews.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/naturopath-reviews/:id",
+      "handler": "naturopath-reviews.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/naturopath-reviews/:id",
+      "handler": "naturopath-reviews.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

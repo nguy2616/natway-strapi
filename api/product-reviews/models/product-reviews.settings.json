@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_reviews",
+  "info": {
+    "name": "product_reviews",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rate": {
+      "type": "integer",
+      "max": 5,
+      "min": 1
+    },
+    "by_user": {
+      "via": "product_reviews",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "posted_at": {
+      "type": "datetime",
+      "required": false
+    },
+    "product": {
+      "model": "product",
+      "via": "product_reviews"
+    },
+    "comment": {
+      "type": "richtext"
+    }
+  }
+}

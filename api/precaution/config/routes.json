@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/precautions",
+      "handler": "precaution.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/precautions/count",
+      "handler": "precaution.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/precautions/:id",
+      "handler": "precaution.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/precautions",
+      "handler": "precaution.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/precautions/:id",
+      "handler": "precaution.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/precautions/:id",
+      "handler": "precaution.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

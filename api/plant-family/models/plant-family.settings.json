@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plant_families",
+  "info": {
+    "name": "Plant_family"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "plants": {
+      "via": "plant_family",
+      "collection": "plant"
+    }
+  }
+}

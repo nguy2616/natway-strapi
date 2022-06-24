@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "precautions",
+  "info": {
+    "name": "precaution"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
